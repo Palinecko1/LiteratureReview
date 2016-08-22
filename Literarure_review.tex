@@ -330,7 +330,7 @@ This macrogrid is an interconnection of microgrids and the integration of the MV
 \section{Power Electronics}
 
 
-Power electronics always was a multidisciplinary field \cite{Technology2015}. The multidisciplinarity of the field comes simply from the various functions the converter must provide. One of the possible representations of the fundamental functions of power converter can be found in \cite{Wyk2012} or in \cite{VanWyk2013}: 
+Power electronics always is a multidisciplinary field \cite{Technology2015}. The multidisciplinarity of the field comes simply from the various functions the converter must provide. One of the possible representations of the fundamental functions of power converter can be found in \cite{Wyk2012} or in \cite{VanWyk2013}: 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=.7\linewidth]{Pictures/vanWyka}
@@ -338,9 +338,59 @@ Power electronics always was a multidisciplinary field \cite{Technology2015}. Th
 \label{fig:vanwyka}
 \end{figure}
 
-The fundamental functions from Fig. \ref{fig:vanwyka}, can be easily matched with different research fields. Let's take the \emph{switching function} as an example. The switching function control electromagnetic energy flow/average power \cite{Ferreira2001}. This function is physically implemented via semiconductor device. This device needs to manufactured, and appropriately confined from the surrounding environment. The one fundamental function of the power converter can be readily matched with multiple research fields.
+%The fundamental functions from Fig. \ref{fig:vanwyka}, can be easily matched with different research fields. Let's take the \emph{switching function} as an example. The switching function control electromagnetic energy flow/average power \cite{Ferreira2001}. This function is physically implemented via semiconductor device. This device needs to manufactured, and appropriately confined from the surrounding environment. The one fundamental function of the power converter can be readily matched with multiple research fields.
 
-Furthermore, as is noted for example in \cite{Kolar2010} the power electronics as a research field reached it's maturity. In \cite{VanWyk2013} it is further elaborated that the maturity of the research field is mainly connected to the exhaustion of the internal drivers for research. While the reasoning in \cite{Kolar2010} and in \cite{Wyk2012} or \cite{Boroyevich2013} is not necessarily the same, the conclusions drawn have a common point. That being that the research in power electronics will be mainly pulled by the applications. This is an interesting point since it add more diversity to already multidisciplinary field. 
+The multidisciplinarity of the field is one of the main hurdles to comprise a solid and in the same time general literature review. This section will provide some general aspects of how the field is defined now, and what are the current research trends in multiple areas. As it will be clear the "contex is the king" for the research in the power electronics, a significant space will be dedicated to the vision of LVDC distribution. However, since the application is more hypothetical than real, the challenges and opportunities are rather shaping the reality, than being shaped by it. 
+
+In \ref{fig:vanwyka} the fundamental functions of the power electronics converter are shown. However, such definition can be too flat, and we need to add more dimensions or other aspects for defining a converter. As is explained for example in \cite{Ferreira2001}, it is no longer sufficient to describe a converter just by using circuit theory. One needs also the component models, be it thermal, electromagnetic or spatial to describe the converter. This is because for definition of a converter the technologies utilized are vital. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\linewidth]{Pictures/vanWyk2}
+\caption{The constituent technologies for power electronic technology.}
+\label{fig:vanwyk2}
+\end{figure}
+
+
+There are several technologies shown in the Fig. \ref{fig:vanwyk2}. In the further text it will be shown, that these technologies can related to research areas, where some have higher incentives for research and some has much lower. 
+
+In Fig. \ref{fig:vanwyk2} there are some relationship between the technologies sketched. These relationships however, can be sketched in different ways. The relationship between the technologies, can be dependent on the application, but mainly on the design process. There is a great deal of subjectivity in how these relationships are usually drawn. And it can be argued that these subjectivity comes from the design process. 
+
+A very classical, perhaps somewhat outdated design approach can be found in Fig. \ref{fig:jelena2}. This division of the design process is very easy to understand, but mainly very illustrative. It clearly distinguishes between two section of design. First is the electrical design, which today is mostly done in simulation and without almost any need for prototyping, thanks to good simulation tools. The second part is  connected to the actual fabricating of the product where the story is completely different.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Pictures/Jelena1}
+	\caption{Conventional construction of power electronic converters. Source:\cite{Popovic2005}}
+	\label{fig:jelena2}
+\end{figure}
+
+In the manufacturing process there is still a strong need for prototyping. Furthermore, many design engineers are not aware of the manufacturing limitations and technology. This unfortunate state of affairs also projects in education. Where a great emphasizes is laid on electrical design, and almost none on the manufacturing and technology. This trend is unhealthy because of several reasons. First of all, the enviromental impact and cost, the two most important factors, can be mainly influenced in this process. And second as will be shown later in this text, there are not many research challenges in the first part of the diagram despite the flood of papers on topologies, new snubbers, soft-switching ... 
+
+In \cite{Pavlovsky2006},\cite{Popovic2005} and \cite{Gerber2005} a very thorough discussion on the design process of the converter can be found. In each work the goal was to improve the efficiency and manily power density. The results were superior to the market equivalents, mainly due to implemententaion of very integral design process. What is interesting in this part of the text is to compare the various relationships between technologies of the converter in each work. On first sight it seem that in \cite{Pavlovsky2006} the emphasizes was laid upon the electrical design. In \cite{Popovic2005}, the emphasizes was laid on the second part of the diagram in Fig. \ref{fig:jelena2}. And in \cite{Gerber2005} the empahsizes was laid more on combination of the two, with definining more consituent relationships.  This small note will be important later, when comparing modular and integral approach for product design.
+
+
+
+%% Application
+
+The last "dimension" describing the power electronic converter is application. Application is perhaps the most vague term which can describe the converter. That comes naturally from how broad the range of application is. Being so vague, and in nature robust, it in a sense defines all of the previous dimensions. Based on the application, we define a combination of fundamental functions the converter must performer. Based on the application we choose the most appropriate technologies that should be used. Furthermore, as will be clear in the coming text, the application also defines the design process. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{Pictures/sapcevanWyk}
+\caption{Power electronic converter space. Source:\cite{VanWyk2014}}
+\label{fig:sapcevanwyk}
+\end{figure}
+
+
+The dimensions defining the power electronic converter can be matched to create a space such as on Fig. \ref{fig:sapcevanwyk}. Compared to the power electronic space in Fig. \ref{fig:sapcevanwyk} one more dimension was briefly touched upon, that being the design process. The design process is hard to fit in such a figure, since it is very iterative, and too "unstable".
+
+ Further, enlargment of the space as defined in \cite{VanWyk2013}, is in the functions. Based on functionalities authors define 3 types of converters - source converter, load converter and network converter. However, it might be worth a consideration to define also a special group of converters for electrical storage elements.
+ 
+ 
+%% Research directions
+
+As the terms and space for the field was restricted, one can continue with describing future trends of power electronics. In \cite{Kolar2010} the power electronics as a research field is described as mature. In \cite{VanWyk2013} it is further elaborated that the maturity of the research field is mainly connected to the exhaustion of the internal drivers for research. While the reasoning in \cite{Kolar2010} and in \cite{Wyk2012} or \cite{Boroyevich2013} is not necessarily the same, the conclusions drawn have a common point: the research in power electronics will be mainly pulled by the applications. This is an interesting conclusion since it adds more diversity to already multidisciplinary field. 
 
 
 The previous two paragraphs illustrate a need for a more general approach when compiling a literature review of the state-of-the art in the power electronics. However, the scope of the power electronics is still too large to capture in a simple chapter. Therefore several selected topics will be reviewed which are directly connected to the research  on the power electronics in the future distribution of electrical energy. 
@@ -348,76 +398,88 @@ The previous two paragraphs illustrate a need for a more general approach when c
 
 \subsection{Internal Drivers for research}
 
+%% Introduction why to speak about internal drivers for research
+
+
 \begin{enumerate}
-	\item \textbf{Wide-bandgap devices(WBG):} The WBG promises two major improvements of the operation
+	\item \textbf{Wide-bandgap devices(WBG):} The WBG promises two major improvements of the operation\cite{Kassakian2013}
 	\begin{equation*}
 	\text{\textbf{WBG}} \begin{cases}
 	\text{High Frequency Operation - reduction of the passives } \\
 	\text{High Temperature Operation - higher integration levels} 
 	\end{cases}
 	\end{equation*} 
-	There are several challenges for the researches to tackle. First of all for high frequency operation in terms of several $MHz$ it is necessary to improve integration of gate drivers. Furthermore, paralleling of high speed modules is challenge. Obviously, there are many more challenges coming with the high frequency switching, one of witch is the material for the passives and their integration and packaging. 
+	There are several challenges for the researches to tackle. First of all for high frequency operation in terms of several $MHz$ it is necessary to improve integration of gate drivers, due to stray inductances and propagation time of the signal. The pioneer in integrated modules with GaN devices is company Creed and GaNSystems. 
 	
-	The high temperature operation also brings in several challenges, connected to solder paste, substrates, connections to the environment and others. Especially for the automotive application there are bottlenecks to be tackled. 
+	The high temperature operation also brings in multiple challenges. While the switch can operate at elevated temperature the solder paste, substrates, connections to the environment and other components may not be quite ready.  Further,  the thermal cycling is recognized as challenge and not only for wide-bandgap devices\cite{Andresen2014a}.
 	
 	\item \textbf{Multi-Objective Optimization and novel design procedures:} Especially in ETH Zurich the multi-objective optimization method has received a lot of attention. A nice example is \cite{Kolar2009}, where it was shown on PFC converter how the Pareto front and MOO can help to improve the design. With these improved design methods, and quantifying the requirements of the converter, a boundary of the current semiconductor operation can be reached. 
 	
 	An perhaps interesting trend is to introduce more general design method as for example in \cite{Ortjohann2009}. Where the authors proposed a general design procedure for several types of the converters. The idea is based on the fact, that although the converters are used in the grid for different purposes they have enough in common so one general design procedure should be developed. 
 	
+	\item 	\textbf{Packaging and modular design as possible drivers}
+	
+	 \begin{quote}
+		''Winners in assembly and interconnect technologies are always those which enable simple manufacturing and high automation level.''\footnote{ ECPE Tutorial on Packaging organized in Delft in 2014,\cite{Bayerer}}
+	\end{quote}
+	
+In manufacturing process anything that allows for cost-reduction is a clear winner. This attitude can be found in \cite{Ulrich2004}, that ideal is to reduce the complexity of the process  : ''\emph{...manufacturing system would utilize a single process to transform a single raw material into a single part ...}'' and as continues in \cite{Ulrich2004} ''\emph{Complexity arises from variety in the inputs, outputs, and transforming process}''.
+
+The general description of complexity of manufacturing process is certainly true for power electronics. In power electronics the trouble for the manufacturing process comes from the fact that the stages of design process, \ref{fig:jelena2} are usually interconnected. 
+	
+	In \cite{Pavlovsky2006} a very high density DC-DC converter was designed, in the introduction a following figure is found to describe the three corner stones of the converter design:
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{Pictures/Pavlovsky}
+		\caption{Three cornerstones of the converter design. \cite{Pavlovsky2006}}
+		\label{fig:pavlovsky}
+	\end{figure}
+	
+	With regards to the current development and papers describing the future of PE such as \cite{VanWyk2013}, \cite{Kolar2014a},\cite{Boroyevich2015} I have changed the figure to the following: 
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{Pictures/PavlovskyUpdated}
+		\caption{Three cornerstones of the converter design}
+		\label{fig:pavlovskyupdated}
+	\end{figure}
+	
+	\newpage
+	Of course the figure is highly subjective and made to fit into the project description. Furthermore, the idea to connect converters in series or in parallel is everything but new. However, here the interleaving of converters is connected to the cornerstones of the converter design. 
+	
+	Reasoning behind \emph{reduction of size}, comes for example from \cite{Bahmani2016a}. Which is yet unpublished dissertation from Chalmers University. The author was designing a converter for a DC DC converter for high power. As he shows the size reduction is not possible with just frequency under certain point. The same conclusion was drawn for example in \cite{Fan2011} or in \cite{Yang2015a}. Furthermore as is concluded in \cite{Hanson2016} and \cite{Kyaw2015} there is no fundamental reason why further improvement of power density via minimizing the size of the transformer  or capacitor is not possible. However, the insulation materials are evolving slower and can pose a bigger bottleneck.
+	
+	
+	The claim with reducing the switching losses with paralleling converters comes from \cite{Kolar2015a}. The modular design approach towards reducing thermal stress comes from the hand-outs of Packaging tutorial \cite{Faculty2014a}.
+	
+	In \cite{Popovic2005} the traditional design of the converter is divided into several parts:
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{Pictures/Jelena1}
+		\caption{Conventional construction of power electronic converters}
+		\label{fig:jelena1}
+	\end{figure}
+	\newpage
+	In for example \cite{Abraham2005} the cornerstones of the packaging from the provided definition are: 
+	\begin{itemize}
+		\item electronic circuit
+		\item thermal circuit
+		\item electromagnetic design
+	\end{itemize}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=\linewidth]{Pictures/JelenaCombo}
+		\caption{Combinig cornerstones with the traditional design approach}
+		\label{fig:jelenacombo}
+	\end{figure}
+	
+	
 	\end{enumerate}
-	\subsection{Packaging and mopdular design as possible drivers}
-This section is highly inspired by \cite{Pavlovsky2006} and \cite{Popovic2005} and Packaging Tutorial organized in Delft in 2014 namely \cite{Bayerer}. 
-From \cite{Bayerer}: \begin{quote}
-	''Winners in assembly and interconnect technologies are always those which enable simple manufacturing and high automation level.''
-\end{quote}
+	
+	
+%% External drivers
 
-From the quote it follows that for manufacturing process anything that allows for cost-reduction is a clear winner. Furthermore, it collides with what can be found in \cite{Ulrich2004} that ideal is to reduce the complexity of the process  : ''\emph{...manufacturing system would utilize a single process to transform a single raw material into a single part ...}'' and as continues in \cite{Ulrich2004} ''\emph{Complexity arises from variety in the inputs, outputs, and transforming process}''.
-
-In \cite{Pavlovsky2006} a very high density DC-DC converter was designed, in the introduction a following figure is found to describe the three corner stones of the converter design:
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{Pictures/Pavlovsky}
-	\caption{Three cornerstones of the converter design. \cite{Pavlovsky2006}}
-	\label{fig:pavlovsky}
-\end{figure}
-
-With regards to the current development and papers describing the future of PE such as \cite{VanWyk2013}, \cite{Kolar2014a},\cite{Boroyevich2015} I have changed the figure to the following: 
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{Pictures/PavlovskyUpdated}
-	\caption{Three cornerstones of the converter design}
-	\label{fig:pavlovskyupdated}
-\end{figure}
-
-\newpage
-Of course the figure is highly subjective and made to fit into the project description. Furthermore, the idea to connect converters in series or in parallel is everything but new. However, here the interleaving of converters is connected to the cornerstones of the converter design. 
-
-Reasoning behind \emph{reduction of size}, comes for example from \cite{Bahmani2016}. Which is yet unpublished dissertation from Chalmers University. The author was designing a converter for a DC DC converter for high power. As he shows the size reduction is not possible with just frequency under certain point. The same conclusion was drawn for example in \cite{Fan2011} or in \cite{Yang2015a}. Furthermore as is concluded in \cite{Hanson2016} and \cite{Kyaw2015} there is no fundamental reason why further improvement of power density via minimizing the size of the transformer  or capacitor is not possible. However, the insulation materials are evolving slower and can pose a bigger bottleneck.
-
-
-The claim with reducing the switching losses with paralleling converters comes from \cite{Kolar2015a}. The modular design approach towards reducing thermal stress comes from the hand-outs of Packaging tutorial \cite{Faculty2014a}.
-
-In \cite{Popovic2005} the traditional design of the converter is divided into several parts:
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{Pictures/Jelena1}
-	\caption{Conventional construction of power electronic converters}
-	\label{fig:jelena1}
-\end{figure}
-\newpage
-In for example \cite{Abraham2005} the cornerstones of the packaging from the provided definition are: 
-\begin{itemize}
-	\item electronic circuit
-	\item thermal circuit
-	\item electromagnetic design
-\end{itemize}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\linewidth]{Pictures/JelenaCombo}
-	\caption{Combinig cornerstones with the traditional design approach}
-	\label{fig:jelenacombo}
-\end{figure}
+	
 	
 
 \subsection{External Drivers for research - Application}
@@ -440,17 +502,18 @@ Requirements:
 \end{itemize}
 
 
-In the previous section, I have tried to identify the converters in the DC microgrid. The number and rating of the converters of course depend on the finalized vision. However, it is quite safe to divide the converters into 5 main categories.
+
+In the previous sections the low voltage DC distribution grid was described as well as a general introduction to power electronics. As was discussed it might be worth to enlarge the function dimension of power electronic converter space by electrical storage converter. Thus we effectively obtain four types of converter based on their function. In low voltage DC distribution all of them can be found with certain specifics and restrictions imposed by the application:
+
 \begin{enumerate}
-	\item \textbf{RES integration converters }- integrating the renewable resources, such as wind, fuel cells or PV. 
-	\item \textbf{Load converters} - not part of the figures, however it is easy to imagine that a whole lighting for a street can be connected to the bus via dedicated converter, which would be a load converter. 
-	\item \textbf{Energy Storage } - fast EV charging, or a converter connected to the energy storage to enhance energy savings and stability of the microgrid.
-	\item \textbf{Power flow converters} - or voltage balancers, the converters to improve overall efficiency of the system by active control.
-	\item \textbf{Distribution converters} - Converters to connect to the utility grid and integrate the microgrid to the existing grid, or the converters connecting various parts of the DC network vertically.
+	\item \textbf{Source Converter }- integrating the renewable resources, such as wind, fuel cells or PV. 
+	\item \textbf{Load Converters} - not part of the figures, however it is easy to imagine that a whole lighting for a street can be connected to the bus via dedicated converter, which would be a load converter. 
+	\item \textbf{Energy Storage Converter } - fast EV charging, or a converter connected to the energy storage to enhance energy savings and stability of the microgrid.
+	\item \textbf{Network Converter} - Converters to connect to the utility grid and integrate the microgrid to the existing grid, or the converters connecting various parts of the DC network vertically. Network converter acts like transformer in AC grid, with some extra functionalities, such as power flow control.
 	
 	\end{enumerate}
 	\newpage
-	\subsection{RES integration converter}
+	\subsection{Source Converter}
 	
 
 \begin{wrapfigure}{r}{0.5\textwidth}
@@ -462,53 +525,31 @@ In the previous section, I have tried to identify the converters in the DC micro
 	\vspace{-10pt}
 	\label{fig:Costs}
 \end{wrapfigure}
-The main argument for more RES is mitigating the challenges related to usage of fossil fuels. Furthermore, RES are in general quite small power-wise. For example,the Joseph M. Farley Nuclear Electric Generating plant in rural Alabama has two turbine generators with a combined capacity exceeding 1,700 MW. Each of the 32 generators at China’s Three Gorges Dam has a 700 MW capacity. In contrast, the largest wind-turbine generators developed are around 6 MW, while the best sellers on the market are still 2-MWwind turbines \cite{Liserre2010}. 
 
-The fact that RES are small in power-supply is often an argument why is it good to integrate them also on community level, not only in energy-farms. 
+
+In the section describing the megatrends pulling the research in low voltage DC distribution integration of renewable energy sources was marked as one of the main motivators. The renewable sources are almost always connected to the grid via a converter. 
 
 As is shown in Fig. \ref{fig:Costs} the PE comprises a significant part of the total cost of the RES system. From business perspective reducing costs of PE and improving reliability are the key issues. The challenges for PE in integration of RES are\cite{Chakraborty2009}:
 
 \begin{itemize}
 	\item Lack of standardization and interoperability among PE components and systems. 
 	\item PE devices should be modular and scalable
-	\item Research is not enough concentrated on the system package\footnote{Apparently author of \cite{Chakraborty2009} didn't hear about our PV integrated modules}
+	\item Research is not enough concentrated on the system package
 \end{itemize}
 
-It seems that the PEBB or IPEM concepts are heading in the right direction but as is pointed out in many publications, interoperability and interconnections of the modules are still challenge.
-
 \subsubsection{Photovoltaic systems and Fuel cells}
-In figure \ref{fig:PVgrids} are the two\footnote{There are naturally many more, comprising various topologies or even reconfigurable topologies to incorporate also storage such as \cite{Kim2013}} integration concepts for both PV and Fuel cells. The concept on figure \ref{fig:PVold} used to be applied in the past. It has two main drawbacks, one is that the PV modules not necessarily contribute with the same power, and second that the AC 50 Hz transformer is big and expensive. 
+The two basic concepts of connecting PV panels to the grid are:
+\begin{itemize}
+	\item 3-phase converter
+	\item decoupled AC and DC side, similar to Fig. \ref{fig:Storage}
+\end{itemize} 
+The first concept is older and without the transformer. However, due to losses and size of the transformer the transformerless topologies are still being investigated\cite{Liserre2010}. The second concept allows for various reconfigurable topologies, such as \cite{Kim2013}. Furthermore, the transformer adds galvanic isolation, which might be required for example due to personnel safety. 
 
-The concept on fig. \ref{fig:PVnew} has an advantage of not using bulky 50 Hz transformer, furthermore in the DC-DC converter the MPPT and voltage boost can be applied. Therefore sometimes, the DC-DC transformer is a simple boost. 
+The advantage of having a DC grid with PV panels comes from the fact, that the PV panels produce DC. Thus, we save one conversion step, and we do not have problems with grid synchronization, or reactive power balancing. 
 
-If we assume connection to a DC grid, clearly we save the one conversion step. 
-\begin{figure}[h!]
-	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\linewidth]{Pictures/PVold}
-		\caption{PV system with 3-$\Phi$ inverter \cite{Chakraborty2009}}
-		\label{fig:PVold}
-	\end{subfigure}
-	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-	%(or a blank line to force the subfigure onto a new line)
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\linewidth]{Pictures/PVnewer}
-		\caption{PV system with decoupled AC and DC side \cite{Chakraborty2009}}
-		\label{fig:PVnew}
-	\end{subfigure}
-	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-	%(or a blank line to force the subfigure onto a new line)
-	
-	\caption{PV and Fuel cells integration concepts}\label{fig:PVgrids}
-\end{figure}
-\newpage
+
 \subsubsection{Wind energy}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{Pictures/Wind}
-	\caption{Wind energy integration to the utility grid}
-	\label{fig:Wind}
-\end{figure}
+
 
 The modern system integrating the wind energy to the grid can be categorized to three main groups \cite{Technology2015}:
 \begin{itemize}
@@ -517,14 +558,20 @@ The modern system integrating the wind energy to the grid can be categorized to 
 	\item full-scale power electronics
 \end{itemize}
 
-There are some other RES which will not be named, since they are pretty much the same in topology and also the challenges are quite similar including: 
+
+
+The main challenges in research of power electronics for integration of renewable sources are: 
 \begin{itemize}
-	\item control - especially for wind turbines, since the wind speed is hard to track
+	\item Control - specifically for wind turbines, since the wind speed is hard to track
 	\item EMI - How to reduce filtering for connection to the grid
-	\item modularity - how to make interconnections between the modules
+	\item Modularity - how to standardize interconnections between the modules and standardize manufacturing
 \end{itemize}
+
+
+
 \subsection{Energy Storage Converters}
-All chemical batteries produce DC power\footnote{As far as I know.}, which leads to the use of PE interface in order to integrate them in the grid. Compared to the previous group of PE for integrating storage it is not necessary to apply some kind of peak power operation. However, these converters need to be bi-directional.
+
+All chemical batteries produce DC power, which leads to the use of PE interface in order to integrate them in the grid. Compared to the previous group of PE for integrating storage it is not necessary to apply some kind of peak power operation. However, these converters need to be bi-directional.
 
 \begin{figure}[h!]
 	\centering
@@ -538,387 +585,157 @@ The advantage of the system on fig. \ref{fig:Storage} is that it can step up or 
 
 \subsection{Load Converters}
 
-In the figure \ref{fig:DCnano1} is a schematic structure of a DC house. The appliances are connected to the common DC bus via power electronic interface. In \cite{Lucia2013} a resonant converter for the inductive cooker was design as case study for the DC house.
+In the figure \ref{fig:nilsnano1} is a schematic structure of a DC nanogrid, which can be house. On the nanogrid level, we can find an example of the load converter in inductive heating.  In \cite{Lucia2013} a resonant converter for the inductive cooker was design as case study for the DC house. 
+
+The research challenges in load converters can be considered of being in a sense driven by the old paradigm\cite{Kolar2009} - reduce full-load losses, increase power density. Therefore a half-bridge resonant converter was designed in \cite{Lucia2013}.  
+
+More interestingly in \cite{Lucia2013} a case study was done to compare the solution for DC and AC grid. And even though the inductive cooker is an AC load, from the comparison the DC grid came as more sustainable solution due to power factor correction, which is need in AC grids.
+
+ 
+
+\subsection{Network Converters}
+
+\begin{quotation}
+	``Like the left-handed monkey wrench, the concept of a dc transformer has always been something of an inside joke among engineers. However by utilizing superconductors a device has now been created in which a direct current actually can be transformed" \cite{Although}
+\end{quotation}
+
+The network converters in low voltage DC distribution can be regarded as distant relative of the low frequency transformer in the AC distribution. The network converters facilitate several functions which can only hardly be achieved\footnote{Or in very limited scope.} by their AC cousins, such as voltage regulation. Naturally, the DC network converter cannot be overloaded for several minutes, and the time constants in general are much smaller. 
+
+In general there are multiple locations where network converter can be employed in the low voltage DC distribution. The network converter would perform different tasks in each location, however there are some fundamental functions each network converter must be able to perform in low voltage DC distribution\cite{Dong2013},\cite{Doncker2014},\cite{FeasibilityofDCtransmissionnetworks},\cite{Jovcic2014}:
+\begin{itemize}
+	\item Enables DC voltage stepping
+	\item DC power and/or DC voltage regulation
+	\item Dynamics decoupling of interfaced systems (eg. connection between bipolar and single-bus architectures)
+	\item Bidirectional DC fault isolation
+\end{itemize}
+
+The network converters should also have several features and comply with some of these requirements:
+\begin{itemize}
+	\item Bidirectional power flow
+	\item Smart metering and communication functions \cite{Liserre2016}
+	\item High partial load efficiency and small stand-by losses
+	\item Long Useful life
+	\item N+1 redundancy
+	\item Easy maintenance 
+	\item Minimal Costs for life time usage (? how to put nicely that it is not just about capital investment but also about maintenance costs ?)
+	\item Environment Friendly (Life-cycle analysis as a measure?\footnote{Such as: \href{https://www.pre-sustainability.com/electric-vehicles-are-best-for-green-mobility-myth-or-not}{www.pre-sustainability.com/coming-soon-sustainability-mythbusters}})
+\end{itemize}
+
+The research in network converters originates in the research of Solid State Transformer(SST). SST is used to describe a converter which is part of the family of flexible ac transmission (FACTs) devices. The SST compared to traditional transformer is supposed to provide more than just voltage step-down and galvanic isolation. The idea is to incorporate advanced control and communication to create a ''energy router"\cite{She2012}. An interesting viewpoint can be found in \cite{Doncker2014} on FACTs, as is pointed out these devices assume centralize power production on transmission level, therefore they fail to provide the stability necessary for the case when significant amount of power comes from distributes sources.
+
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Pictures/DCnano1}
-	\caption{DC house structure.\cite{Lucia2013}}
-	\label{fig:DCnano1}
-\end{figure}
-\newpage
-
-
-While the PE interface is a simple half-bridge series resonant inverter an interesting comparison can be made between AC household and DC one. 
-
-\begin{figure}[h!]
-	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\linewidth]{Pictures/inductive1}
-		\caption{Inductive heating system - AC house \cite{Lucia2013}}
-		\label{fig:inductive1}
-	\end{subfigure}
-	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-	%(or a blank line to force the subfigure onto a new line)
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\linewidth]{Pictures/inductive2}
-		\caption{Inductive heating system - DC house \cite{Lucia2013}}
-		\label{fig:inductive2}
-	\end{subfigure}
-	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-	%(or a blank line to force the subfigure onto a new line)
-	
-	\caption{Comparison of DC and AC household.}\label{fig:DCAC}
-\end{figure}
-
-As is clear from comparison in fig. \ref{fig:DCAC} in case of a DC house at least one conversion step is missing, the power factor correction. 
-
-\subsection{Power Flow Converters}
-
-The idea of controlling power flow comes from multi-terminal HVDC networks \cite{Hajian2012}. The reason is that if we have more than one DC line and we cannot fully control the power flow in the lines an overload can occur. In all the works concerning the power flow control it is mentioned that this can be also done by incorporating variable resistors. However, this is hardly economical since efficiency-wise we are not improving the operation of our network. 
-
-In HVDC a modular multilevel power flow control converters were proposed \cite{Xu2014}. In the same paper it is furthermore realized that the converter should be bi-directional in order to improve the operation. What is interesting about power flow converters is that they do not need to be rated for the full power of the DC grid. 
-
-In \cite{Mackay2015} Laurens proposed a PFC for thee LVDC grid. The reasoning and also the solution is quite similar to the HVDC multi-terminal network. Similar deeds were proposed for example in \cite{Mu2012}(HVDC) or \cite{Mohamed}. 
-
-In general for LVDC the PFC topic is basically unexplored. Suprisingly even for HVDC the quality of the published work is relatively low, and the topic is not well documented. But my search was a bit brief.   
-
-\subsection{Distribution Converters}
-
-Solid State Transformer is used to describe a converter which is part of the family of flexible ac transmission (FACTs) devices. The SST compared to traditional transformer is supposed to provide more than just voltage step-down and galvanic isolation. The idea is to incorporate advanced control and communication to create a ''energy router"\cite{She2012}. An interesting viewpoint can be found in \cite{Doncker2014} on FACTs, as is pointed out these devices assume centralize power production on transmission level, therefore they fail to provide the stability necessary for the case when significant amount of power comes from distributes sources.
-
-Using SST makes possible to have multiple output, such as in the figure \ref{fig:SST}. With such a converter it possible to create a  system where both AC and DC are used for what they are best. 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{Pictures/SST}
+	\includegraphics[width=0.8\linewidth]{Pictures/SST}
 	\caption{Solid State Transformer}
 	\label{fig:SST}
 \end{figure}
+%\newpage
+
+Since it has been many years since electronic transformer\footnote{1968- McMurray \cite{McMurray1971}} has been proposed, there is already quite some research done in the area. Some researchers thought that solid-state transformers could replace the low frequency counterparts in the AC network, today however it seems that consensus is that SST will be used only in places where the DC link is necessary\cite{Kolar2014d}. Most commonly studied SST is 3 stages converter - AC-DC,DC-DC,DC-AC,such as in the Fig. \ref{fig:SST}. 
 
 
-For the era-net project I think it should be possible to decouple the SST into 2 (or 3 parts).
-\begin{itemize}
-	\item  AC-DC converter connected directly to the grid. 
-	\item DC-DC converter with HF transformer to provide beside else galvanic isolation
-	\item DC-AC low voltage inverter
-\end{itemize}
-
-The AC-DC part can be omitted for two reasons basically. First is that a connection to DC grid can be assumed for the sake of the project. But more importantly, during the workshop it was ''decided" that AC-DC part is well matured, and already well known, thus should not be investigated. Therefore, it would make sense to consider only the DC-DC part of the SST\footnote{This seems to be a very common practice in many publications. Sometimes it seems that people are almost avoiding work with any AC.}. 
-%\hrule
-%\newline
-
-The SST can be connected in two places in the 'envisioned' DC microgrid:
-\begin{itemize}
-	\item Grid to Distribution Microgrid
-	\item Distribution Microgrid to the House microgrid (alternatively to the zone)
-\end{itemize}
-
-The importance of the distinguishing is clear from the different voltage level. While in the first case there is a need to consider connection to $\approxeq$ 12 to 20 kV in the second case, it is around 1.5 kV. 
-
-The second reason for the distinguishign is the different functionality which can be drawn for the two situations. For example in a house we might want to have just one converter to which all the RES are connected, kind of multi-input-multi-output system\footnote{More will be hopefully in the next section.}.
-
-A converter interfacing the grid and a single DC house(or nanogrid) was designed in \cite{Dong2013}. A 2 stage topology was proposed with rated power of 5 kW. 
-
-With the only reason that multilevel makes more sense for higher voltage, I would concentrate on the converter for tying with the grid. This converter should have at lease following features\cite{Dong2013}\cite{Doncker2014}:
-
-\begin{enumerate}
-	\item bidirectional power flow
-	\item dynamics decoupling of interfaced systems
-	\item bidirectional fault current interrupt capability
-	\item smart metering and communication functions
-\end{enumerate}
 
 The three main challenges for the SST in distribution are following\cite{Huang2013}:
 \begin{itemize}
-	\item Efficiency - if the SST are to compete with the traditional transformers then efficiencies around $98\%$ are inevitable 
-	\item Thermal Design - The increased switching speeds, and attempts to provide higher power density in order to justify the extra expense compared to traditional transformers are putting the thermal management to the attention
-	\item Costs- Distribution transformers are pretty cheap, since it is a  standarized technology. The cost should not be too high. 
+	\item Overall Efficiency - if the SST are to compete with the traditional transformers then \href{<http://www.ecfr.gov/cgi-bin/ECFR?page=browse>}{efficiencies}\footnote{http://www.ecfr.gov/cgi-bin/ECFR?page=browse} around $98\%$ are inevitable. Even though, it is recognized as for example in project \href{<http://www.speed-fp7.org/>}{SPEED}\footnote{http://www.speed-fp7.org/} that the lower efficiency can be acceptable if it is outweighed by other benefits.
+	\item Availability and Useful Life - The increased switching speeds, and attempts to provide higher power density in order to justify the extra expense compared to traditional transformers are putting the thermal management to the attention. The long useful life, highlight the need for good thermal cycling models.
+	\item Costs- Distribution transformers are pretty cheap, since it is a  standardized technology. 
 \end{itemize}
 
-In order to construct a converter which is suitable to interconnect ac grid with the dc microgrid. Two options are basically available:
-\begin{itemize}
-	\item 2 or 3-level converter
-	\item modular structure 
-\end{itemize} 
-The problem with the first option is t that high power devices which can switch reasonably fast are not really available. Although SiC IGBTs could fill in the gap. 
 
-The second option is of interest for this project. The challenges then include besides else a higher cost, but also inevitably lower power density. The most common topology is input-series-connected and output-parallel-connected \cite{Fan2011}, \cite{wang2014}. The selection of this connection intuitevely makes sense, since on the output is much higher voltage than on the output. 
 
-The challenge is first of all to achieve a comparable efficiency to the traditional transformers, because of the cascaded structure. It seems to be common practice to either concentrate on the control of the whole M2C without actually building it, or to build only one module and than test it alone \cite{Fan2011}. 
 
-One of the main challenges in connecting the modules is to cope with relatively large inductance of the interconnections which are causing large circulating currents, causing high losses. The interconnection inductance is also limiting the switching frequency of the modules.  
+ 
 
-Further challenges inside the modules are achieving ZVS over large range of the load, since both dual-active bridge and half-bridge have ZVS switching only in  a limited range. To increase the ZVS region it is possible to include a third leg such in \cite{Baars2015}. Furthermore to improve the ZVS switching also the transformer ratio and configuration needs to be considered \cite{Baars2015b}.
+The efficiency can be increased if the converters are achieving ZVS over large range of the load, since both dual-active bridge and half-bridge have ZVS switching only in  a limited range. To increase the ZVS region it is possible to include a third leg such in \cite{Baars2015}. Furthermore to improve the ZVS switching also the transformer ratio and configuration needs to be considered \cite{Baars2015b}.
 
 The transformer attracts quite some attention as is shown in \cite{Huang2013}. Not only the configuration of winding but also the structure are very important for the design. Based on the switching frequency the material should be selected. One of the possible demands might be to avoid the ferrite cores. Because these might be just too big due to their low saturation flux density. 
 
-From the point of view of the semiconductor technology used in these transformers an interesting and quite soundly argumented prediction was made in \cite{Huang2013}:
+From the point of view of the semiconductor technology used in these transformers an interesting and quite soundly argumented prediction was made in \cite{Huang2013},\cite{Rohm2014}:
 
 \begin{itemize}
 	\item SiC Mosfets will be used in applications with voltage $<15$ kV
 	\item SiC IGBT's for 15-20 kV
 	\item SiC GTO's for higher voltages
 \end{itemize}
-\vspace{5pt}
-\hrule
-\vspace{5pt}
-In the mentioned paper the GaN switches were disregarded. I assumed it was due to 2 reasons:
-\begin{itemize}
-	\item price - due to gallium it seems that the lowest price threshold of these devices will remain inevitably a bit higher  compared to SiC
-	\item blocking capabilities - the sustained voltage of these switches is still a bit low compared to Si or SiC
-\end{itemize}
-However, the GaN switches are an interesting option for power flow control converters.
-\vspace{5pt}
-\hrule
-\vspace{5pt}
-%\newpage
-Based on these very brief overview the main challenges to design the M2C for dc microgrid connection are:
-\begin{itemize}
-	\item \textbf{High efficiency} - very high efficiency modules to enable high efficiency cascaded structure. This basically includes also the challenges connected to the design of the transformer, switch selection, topology considerations etc. 
-	\item \textbf{Packaging} - how to reduce the interconnection inductance to reasonable levels
-	\item \textbf{Control} - how to control multiple modules connected in series/parallel 
-\end{itemize}
-
-\subsection{Conclusion}
-Since this section was a little bit longer,  I think it deserves a few closing remarks. 
-
-\begin{itemize}
-	\item \textbf{RES converters} - The renewable sources integration is  studied in many papers. These topics are also well covered in our group. Furthermore, as was discussed before a general design approach for a group of converters might be an interesting topic. An interesting publication regarding general design approach for RES integration is \cite{Ortjohann2009}. The topic of integration of RES via PE intergaces is quite vivid, however I would not embark to it since to me it seems that it is a bit out of the scope of the project.
-	\item \textbf{Load Converters} - An example study was \cite{Lucia2013}.  The load converters to me do not seem to be an interesting topic. Due to 2 reasons, in case we are not on house level there are not so many loads, and these converters are I think quite well understood in industry. Furthermore, isn't Fraunhofer doing something similar ? 
-	
-	\item \textbf{Energy Storage Integration} - done by TU/e
-	
-	\item \textbf{Power Flow Converters} - This seems to me as quite an uncharted territory. In almost every sense from control to the topology selection and power ratings.. This makes an interesting research topic. On the other hand, since it seems that these converters do not need to be rated for the full power of the system, the M2C structure does not seem to be necessary. More importantly, the microgrid can work without it. And PFC is not the 'missing link'.
-	
-	\item \textbf{Distribution converter} - This group of converters I consider as the most interesting. In most of the papers it is assumed that the interconnection between the microgrid and the utility grid can be done in an efficient way and such that the interfacing PE is able to provide many auxiliary services. However, many research groups such as in Aalborg are basically uninterested in the PE components and only assume that when they need it the PE will be there. Which in most cases is true, but the interface with utility grid can be quite a challenge for  the PE. 
-	
-	The choice of this interface makes also sense from the point of view of the era-net. First of all, this converter is truly enabling technology for the microgrid concept. Furthermore, at these  voltage levels M2C structure makes sense. And for the higher voltage rating and relatively high switching frequencies there are many challenges to be solved. 
-	
-	On the other hand, apparently many phd projects started with the goal to build and test complete M2C and didn't quite get to the test phase. This makes it even more attractive, but also an interesting opportunity to learn from others mistakes.
-	
-\end{itemize}
 
 
-\subsection{DC transformer}
-\begin{quotation}
-	``Like the left-handed monkey wrench, the concept of a dc transformer has always been something of an inside joke among engineers. However by utilizing superconductors a device has now been created in which a direct current actually can be transformed" \cite{Although}
-\end{quotation}
-
-
-From the previous it is quite safe to conclude that if the DC grids are to be installed, a component is needed that will be able to interconnect multiple parts of the same DC grid. Or multiple DC grids into a mashed DC grid. This converter should be able to at least have these three functions\cite{FeasibilityofDCtransmissionnetworks},\cite{Jovcic2014}:
-\begin{itemize}
-	\item enables DC voltage stepping
-	\item DC power or DC voltage regulation
-	\item DC fault isolation
-	\item Interfacing different DC technologies like current source with voltage source DC or monopolar with bipolar DC systems.
-	\item Reduce stand-by losses and efficiency at partial load
-\end{itemize}
-
-The DC-DC converter is almost equivalent to the transformer in the AC grid. As is almost every where noted the biggest difference between the two is the fact that the converter cannot be overloaded and the time constants are much smaller. 
-
-Since it has been many years since electronic transformer(1968) has been proposed, there is already quite some research done in the area. Some researchers thought that solid-state transformers could replace the low frequency counterparts in the AC network, today however it seems that consensus is that SST will be used only in places where the DC link is necessary\cite{Kolar2014d}. Most commonly studied SST is 3 stages converter - AC-DC,DC-DC,DC-AC. 
-
-Since the DC-DC part is also interesting for LVDC it appears to make sense to review this part of the SST research. At first a few interesting things, prof. Kolar vision of the research on SST:
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\linewidth]{Pictures/SSThypeTrain}
-	\caption{SST hype cycle.}
-	\label{fig:SSThypeTrain}
-\end{figure}
-\newpage
-I am not exactly sure how big is the gradient of the curve at Smart Grid point, but I expect it is big enough. Which is a perhaps good point to start to explore only the important things for the application. 
-
-The second vision from prof. Kolar is in the next figure:
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\linewidth]{Pictures/SST2}
-	\caption{Development Cycle.}
-	\label{fig:SST2}
-\end{figure}
-
-The reason why I have included these two figures is, that I think the situation for ''modular converter for LVDC distribution'' is very similar to the SST for Microgrids. The fundamental questions are relatively well answered, but the converters are far from being used in the practice. 
 
 As a part of the FREEDM project a company \emph{GridBridge} tried to create an SST. \href{<http://www.grid-bridge.com/products-2/>}{Product} which is now commercially available is not exactly an SST. It is a converter that helps with dynamic regulation of the voltage and reactive power near the feeder. Yet, the GridBridge receive a lot of attention both from industry and government. It is quite strange because there is similar product from a bigger company \href{<http://varentec.com/products/engo-v10/>}{Verantec}. This product seems to be important for the US market where the availability of the electrical power is low compared to Europe.
 
-\newpage
-\subsection{Limitations and opportunities}
-The general problems of the SST technology for the applications are:
-\begin{itemize}
-	\item Efficiency - is still considered as a major problem. The reason is very high efficiency of low frequency tf efficiency. Even though, it is recognized as for example in project \href{<http://www.speed-fp7.org/>}{SPEED}\footnote{http://www.speed-fp7.org/} that the lower efficiency can be acceptable if it is outweighed by other benefits.
-	
-	\item limited space reduction 
-	\item design of HF magnetics for high power
-	\item high costs
-	\item reliability (failure rate \& useful life )
-	\item High currents on LV side and High voltages on HV side ? (prof. Liserre )
-	
-\end{itemize}
 
-In the following text I will try to go by each limitation, explain it and link with what has been done in the field.
-
-
-\subsubsection{Efficiency \& Reliability \& Modularity}
-
-For the SST the efficiencies vary widely based on the definition which author uses. However, for Eranet project only a DC-DC conversion part matters, thus a benchmark can be selected later. The low frequency transformers have \href{<http://www.ecfr.gov/cgi-bin/ECFR?page=browse>}{regulations}\footnote{http://www.ecfr.gov/cgi-bin/ECFR?page=browse} which specify the efficiencies for each voltage level and power rating. Currently the efficiency regulations form MV oil immersed transformers start at 98\% at 35\% of the nominal load. 
-
-What I find of particular interest it is the influence of modularity on the efficiency. Without considering any particular topology, while this limits the accuracy of the analysis based on the available literature there could be some general conclusions drawn. 
-
-The following picture is inspired by a real graph in \cite{Yang2014}, where a modular structure based on dual-active bridges(DAB) was studied and similar dependence was measured for Silicon devices. As was shown in \cite{Yang2014}, there is a breaking point after which the efficiency of the modular structure starts to increase. If we  increase the no. of modules to relatively high number we can obtain efficiency comparable to that of non-cascaded structure. In the very same paper, it was shown that it does not make sense to increase the no. of modules after some point. The reason for the saturation in efficiency and weight gains was that increasing frequency is not an option after a point where the temperature of the ferrite would rise too much. 
-
-
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\linewidth]{Pictures/MadeUp}
-	\caption{Variation of efficiency based on the number of modules.}
-	\label{fig:MadeUp}
-\end{figure}
-
-Based on the results from \cite{Yang2014}, I have added a line for SiC.  The SiC are well described in for example \cite{Rohm2014}, an application note from Rohm. It seems that SiC can push the efficiency and weight gains a bit higher in the area where the IGBT's would be normally used. I have also added GaN devices. Which could increase the efficiency for the cascaded system with many modules. However, this is only guess based on the fact that GaN converters with power rating of 1 $kW$ and switching frequency of almost 1 $MHz$ were already designed \cite{Mu2014}. 
-
-In the summer school prof. Liserre had a lecture on the power electronics fro future grids. As I have noticed he was a strong advocate of modular structures for the future converter, therefore I have went through their articles. 
-
-
-
-
-In \cite{Quartarone} it is claimed that the modularity can boost the efficiency of the SST. However, only the DC-DC part was considered, and only DAB was considered as a building block.  Furthermore, at some point it is claimed that a reliability can be improved because of redundancy. On the contrary during the lecture it was shown that the reliability might even suffer due to uneven thermal stress on the modules. While at this paper the switching losses are considered, other limitations like magnetic material are not thoroughly considered. Making the applicability of the work limited. 
-
-In \cite{Costa2015} an interesting approach was proposed to increase redundancy of the DC-DC converter. 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=.7\linewidth]{Pictures/Quad}
-	\caption{Topology of quad-active bridge converter. Source: \cite{Costa2015}}
-	\label{fig:Quad}
-\end{figure}
-
-The idea is, that the power can be routed through either all three modules on the right hand side, or only through two (or one) in case of a failure of  the other module. This is an interesting idea, because it clearly increases the redundancy of such a converter. However, as was pointed out that the uneven stress of the modules creates problem with how to integrate these modules inside a package. The thermal expansion coefficients are different for different materials. If we  turn on and off the modules too often then the temperatures of different parts of the converter will be different which leads to mechanical stressing ... An interesting project is though starting at this university called \href{<http://www.pe.tf.uni-kiel.de/en/research/fields-of-research/the-highly-efficient-and-reliable-smart-transformer-heart-a-new-heart-for-the-electric-distribution-system>}{The Highly Efficient And Reliable smart Transformer (HEART)}\footnote{http://www.pe.tf.uni-kiel.de/en/research/fields-of-research/the-highly-efficient-and-reliable-smart-transformer-heart-a-new-heart-for-the-electric-distribution-system}.
-
-\subsubsection{Limited space Reduction \& Magnetics design \& New semiconductors}
 
 In power distribution application the power density is not necessarily the ultimate design factor. However, it can happen that the price of the land is too high (eg. city) and then the power density becomes important. Furthermore, usually power density is an opposing force to improving efficiency \cite{Biela2009}. In \cite{Biela2009} it is shown for a phase-shift converter with current doubler that very small gains in efficiency can mean significant decrease in power density. 
 
-%The influence on power density also has whether we choose soft-switching or hard switching. We can improve the efficiency of hard switched converters with SiC devices, however it can be shown that these solution tend to be more bulky and less flexible. 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\linewidth]{Pictures/TransformerStatus}
-	\caption{Transformer design status}
-	\label{fig:TransformerStatus}
-\end{figure}
-Main part of the converter which volume is being minimized is the inductor/transformer.The design of magnetics and their behaviour under different conditions is being studied quite extensively \cite{Su2011},\cite{Mu2014}. As was hinted before as it  happens that the semiconductor is not the limiting factor for switching frequency. Rather in the ferrite when flux density is high the hysteresis losses increase, if the switching frequency is high the eddy current losses rise. These two effects lead to increase in temperature, the temperature can rise dangerously close to Curie temperature and that poses a practical limitation for the design. The almost up-to-date research state is nicely captured in the picture from dissertation \cite{Shen2006} : 
 
 
+Main part of the converter which volume is being minimized is the inductor/transformer.The design of magnetics and their behaviour under different conditions is being studied quite extensively \cite{Su2011},\cite{Mu2014}. As was hinted before as it  happens that the semiconductor is not the limiting factor for switching frequency. Rather in the ferrite when flux density is high the hysteresis losses increase, if the switching frequency is high the eddy current losses rise. These two effects lead to increase in temperature, the temperature can rise dangerously close to Curie temperature and that poses a practical limitation for the design. The almost up-to-date research state is nicely captured in the dissertation \cite{Shen2006}. 
 
-what is missing is the improvements for high power application 1 kW -10 kW with ultra high switching frequency 1 Mhz and more. These improvements were enabled mainly by introduction of GaN devices \cite{Mu2014}. In the mentioned paper \cite{Mu2014} few interesting considerations were made  with regards to ferrite. It was shown the ferrite is no longer suitable for  frequencies over 900 kHz. And the very prosaic reason is given which is limiting the space reduction. Not enough winding space for  the Litz wire. Although it was noted that with a finer Litz the limit can be pushed a bit higher, however it might be just better to use nanocrystaline materials. 
+As is shown the research covered almost all areas of power and frequency ranges. The \cite{Shen2006} can be updated with the improvements for high power application 1 kW -10 kW with ultra high switching frequency 1 Mhz and more. These improvements were enabled mainly by introduction of GaN devices \cite{Mu2014}. In the mentioned paper \cite{Mu2014} few interesting considerations were made  with regards to ferrite. It was shown the ferrite is no longer suitable for  frequencies over 900 kHz. And the very prosaic reason is given which is limiting the space reduction. Not enough winding space for  the Litz wire. Although it was noted that with a finer Litz the limit can be pushed a bit higher, however it might be just better to use nanocrystaline materials. 
 
 
 An interesting analysis was carried out in \cite{Waffler2009}, were hard switched SiC device was compared with soft-switched Si device. While the efficiencies were comparable, the SiC was cost-wise much better (based on total chip area). However, the soft-switched was smaller and more flexible solution. This is perhaps an interesting implication, the soft-swtiched modules can be less cost-effective then utilization of non-modular device based on SiC, but the modular design has advantages like smaller size and more flexibility.
 
+\subsection{Vertical vs. Horizontal network converters}
 
-An interesting source of inspiration is also the market for telecom distribution which has been dc-based for past 180 years. Currently the DC solutions for the market are of very high quality with rectifier efficiencies around 95 \% over large range of load fig. \ref{fig:eSure}.
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\linewidth]{Pictures/eSure}
-	\caption{The 15kW high- efficiency eSure™ rectifier (model R400- 15000e) converts standard AC supply voltages into stable DC voltage, adjustable up to 400V DC. Each unit in the system operates inde- pendently and delivers conditioned, isolated power onto a common distribution bus. The rectifiers function in parallel for seamless redundancy and load sharing within the system. These pure three phase rectifiers provide ideally balanced currents back to the grid with low harmonic content.}
-	\label{fig:eSure}
-\end{figure}
-%\newpage
-The companies operating on this market use modularity to achieve better spatial design of their converters. The idea is that they can better distribute the converters in space and thus save some space even though the power density is a bit smaller. As is noted the efficiency is of utmost importance due to the fact that the data centers consume up to 100 times more energy\footnote{Source: ABB blog ?} than the office building of the comparable size. 
+The network converters in distribution systems, can be divided based on their place in the system. If the converters are connecting different voltage levels, we can talk about vertical converters. And example of such a converter can be found in \cite{Dong2013} where a converter interfacing the grid and a single DC house(or nanogrid) was designed. A 2 stage topology was proposed with rated power of 5 kW. 
 
 
 
+The horizontal converters are those that are connecting the same voltage levels, so their primary function is not stepping up the voltage, but regulation of power flow. The idea of controlling power flow comes from multi-terminal HVDC networks \cite{Hajian2012}. The reason is that if we have more than one DC line and we cannot fully control the power flow in the lines an overload can occur. In all the works concerning the power flow control it is mentioned that this can be also done by incorporating variable resistors. However, this is hardly economical since efficiency-wise we are not improving the operation of our network. 
 
-\section{Modular topology for LVDC}
+In HVDC a modular multilevel power flow control converters were proposed \cite{Xu2014}. In the same paper it is furthermore realized that the converter should be bi-directional in order to improve the operation. What is interesting about power flow converters is that they do not need to be rated for the full power of the DC grid. 
 
-From the first part of the document it can be concluded that different parts of the LVDC network need to be connected in a way to generate higher DC bus voltages. As was shown in \cite{Yang2014} or \cite{Quartarone}, it is possible to expect positive effect of modular solution on efficiency and redundancy of the converter. As such there are several modular solution, which seem to be based on either series or parallel connection of converter. The converters can be connected:
-\begin{itemize}
-	\item IPOP - input parallel - output parallel
-	\item ISOP - input series - output parallel
-	\item IPOS - input parallel - output series
-	\item ISOS - input series - output series
-\end{itemize}
+In \cite{Mackay2015}  power flow network converter for thee LVDC grid was propoes. The reasoning and also the solution is quite similar to the HVDC multi-terminal network. Similar deeds were proposed for example in \cite{Mu2012}(HVDC) or \cite{Mohamed}. 
 
-For the LV application it can be hard to validate the series connection, since the voltage levels do not require sharing among the components. On the other hand, the parallel connection can reduce switching and conduction losses, furthermore a power sharing can be created when the power transfered is low, the redundant modules will be turned off. 
 
-For the LVDC application IPOP can prove to be worth investigation because of afromentioned positives. Furthermore the IPOP is also a solution on which some stuff can be applied and have a look on EMI. and other things like theory of chaos can be applied to study the emi, reliability, long life and more. To obtain more fundamental knowledge of what is happening. 
 
-Multi-cell converter systems, are being studied also in ETH PES, with regards to implementation of renewable sources. In \cite{Kolar2014a}, the advantages of parallel interleaving of converters were described as:
-\begin{itemize}
-	\item Breaks the Frequency Barrier
-	\item Breaks the Impedance Barrier
-	\item Breaks Cost Barrier - Standardization
-	\item High Part Load Efficiency
-\end{itemize}
-
-The interleaved converters were studied for very long time. However, there are still topics which were not yet described in detail
-\begin{itemize}
-	\item thermal cycling and uneven loading of the converters
-	\item EMI, while the parallel interleaving has potential to decrease the EMI there still might be need to quantify it. Furthermore, I came across quite interesting application of chaos theory for mitigation of EMI, however not done for more complex structures. 
-	\item furthermore, the redundancy is increased, however the various failures were not studied. In order to achieve longer useful life
-	\item based on the previous knowledge an approach to generation of system safe operation are can be described. This could be an interesting thing for practicing ingeniuers
-\end{itemize}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[height=0.5\textheight]{Pictures/Paralllel}
-	\caption{Paralllellll}
-	\label{fig:paralllel}
-\end{figure}
-
-Apparently the modular design can help and is used to tackle the newest european things for railways.
-
-\section{Module  review}
-\begin{remark}
-	This section was intended to cover much bigger scope of the converter topologies. However, they were only derivatives of the half-bridge and full-bridge converter. The reason to include only the two was to get more fundamental comparison. 
-\end{remark}
-
-The modular topologies are usually based on basic switching cell. The switching cell is most of the times either half-bridge cell or full bridge cell. As I have noted before, it is often required from the converters in distribution to have ability to isolate fault. 
-
-In multi-source systems it is often required to have galvanic isolation. The galvanic isolation is inside the converter. The requirement can be based on\cite{Karshenas2011}: 
-\begin{itemize}
-	\item personnel safety 
-	\item noise reduction
-	\item proper operation of protection systems
-\end{itemize}
-
-The basic cell is either full-bridge converter or half-bridge. 
-\begin{table}[h!]
-	\centering 
-	\begin{adjustbox}{width=1\textwidth}
-		\small
-		\begin{tabular}{c c c c} 
-			\multicolumn{4}{c}{Half-bridge and Full-bridge comparison} \\ 
-			\cmidrule(l){1-4}
-			\multicolumn{2}{c}{Half-bridge } & \multicolumn{2}{c}{Full-bridge } \\
-			Pros  & Cons & Pros & Cons   \\ % Column
-			
-			\midrule % In-table horizontal line
-			\midrule
-			Low switch count & Large current ripple at  & Voltage stress over the switch & High ripple content in currents, \\ %1
-			.  & splitting cap. LV side & is the same as bus voltage & thus large filters \\ %1
-			Relatively wide ZVS range & Unbalanced current stress & Almost equal current stress  & No inherent DC current  blocking\\ %2
-			against voltage and load variations & between switches on LV side & on each side &  capability for tf winding \\ %2
-			Same rating of components as & Low series inductance of TF & Simple structure of transformer & No soft-switching in  \\
-			for DAB & to limit reactive power & . & light load \\ 
-			Relatively easy control & . & Soft switching can be achieved & Control is sensitive to changes in \\
-			. & . & without additional circuits & phase angle, especially for high voltages. \\ 
-			Low ripple current at the  & . & Fast dynamic behaviour  due to & Large component count, \\
-			current fed side(desirable for batteries) & . & lack of additional passives & considerable gate losses \\ 
-			. & . & well known control methods  & . \\ %2
-			. & . & . & . \\ %2
-			\bottomrule % Bottom horizontal line
-		\end{tabular}
-	\end{adjustbox}
-	%	\caption{Table caption text} % Table caption, can be commented out if no caption is required
-	\label{tab:template} % A label for referencing this table elsewhere, references are used in text as \ref{label}
-\end{table}
-
+\newpage
+%%MODULARITY GENERAL
 \section{Modular vs. Integral}
 
-\subsection{What is modularity ?}
+\subsection{Product Architecture}
+The product architecture is a crucial term in the industrial design field. The product architecture can be defined as in Ulrich \cite{Ulrich2004}:
+\begin{definition}
+Product architecture is the scheme by which the functional elements of the product are arranged into physical chunks. The architecture of the product is established during the concept development and system-level design phases of development. 
+\end{definition}
+	
+The physical chunks are major physical building blocks from original physical elements. The modularity of the product architecture follows from two things:
+\begin{itemize}
+	\item how many functions the chunks implement
+	\item how well are the interactions between the physical chunks defined
+\end{itemize}
+		
+		
+From here it follows that modular architectures are those in which the physical chunks implement a specific set of functional elements and has well-defined interactions with the other chunks. Ulrich defines three types of modularity:
+\begin{itemize}
+	\item slot modularity
+	\item bus modularity
+	\item sectional modularity
+\end{itemize}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{Pictures/modularityUlrich}
+	\caption{Ulrich types of modularity}
+	\label{fig:modularityulrich}
+	\end{figure}
+				
+				
+Integral architecture is on the opposite side of the spectrum of architectures. For integral architecture it is typical that implementation of the functional elements is spread across tanks, and the interactions between the chunks are ill-defined. As is noted in \cite{Ulrich2004}, there is no strict line between the two architectures, rather it is possible to determine a level of modularity of  the product. 
+		
+				
+The product architecture  is an important term since it has implications on product change, product variety, component standardization, product performance, manufacturability(supply chain),and product development.  
 
-First and interesting detour can be taken to cross-field study \cite{Li2006}. The authors of this study map modularity ideas in various social sciences. An interesting look can be on Adam' Smith \emph{laissez faire}. Where the core idea is that 10 labours make many more pins than 1. That is because of specialization and division of labour. Which indeed is a modular approach. This is why modularity comes very natural to us, since it reflects the way we think. Simplify the problem into smaller task and solve each one separetly and then combine. 
 
-As is claimed in \cite{Salvador2007} there are over 100 different definitions for modularity in the used literature. Some of them are very similar, some even contradictory. This makes rigorous study of the topic rather hard. However, \cite{Salvador2007} has proven as a very thorough and useful literature review. Based on the literature study in \cite{Salvador2007} a definition of modularity was proposed which is connecting both modularity in the production and in design.  
 
-In \cite{Salvador2007} it is very reasonably argued that modularity, \textbf{has to be defined for a set of products, namely a product system}. Which can be a car model with its possible variants.  Furthermore, the modularity can be defined at one exact point in time, then we talk about \emph{product variety} or over a period of time and then we talk about \emph{product change}.
+\subsection{Defining Modularity}
+
+First and interesting detour can be taken to cross-field study \cite{Li2006}. The authors of this study map modularity ideas in various social sciences. An interesting look can be on Adam' Smith \emph{laissez faire}. Where the core idea is that 10 labours make many more pins than 1. That is because of specialization and division of labour. Which indeed is a modular approach. This is why modularity comes very natural to us, since it reflects the way we think. Simplify the problem into smaller task and solve each one separately and then combine.  Obviously, a term with such a broad range of meanings has hardly any use for rigorous studies.
+
+As is claimed in \cite{Salvador2007} there are over 100 different definitions for modularity in the available literature. Some of them are very similar, some even contradictory. This makes rigorous study of the topic rather hard.  Based on the literature study in \cite{Salvador2007} a definition of modularity was proposed which is connecting both modularity in the production and in design.  
+
+In \cite{Salvador2007} it is very reasonably argued that modularity, has to be defined for a set of products, namely a product system. Which can be a car model with its possible variants.  Furthermore, the modularity can be defined at one exact point in time, then we talk about \emph{product variety} or over a period of time and then we talk about \emph{product change}.
 
 The modularity is defined based on two terms:
 \begin{itemize}
@@ -927,7 +744,8 @@ The modularity is defined based on two terms:
 \end{itemize}
 
 \subsubsection{Component Separability}
-Is a term connected to the production. However, it should be noted that it is more restrictive than per-part manufacturing\footnote{''There were once two watchmakers, named Tempus and Hora, who manufactured very fine watches the watches	the men made consisted of about 1000 parts each. Tempus had so constructed his that if he put it down—to answer the phone, say—it immediately fell to pieces and had to be reassembled from the elements. The watches that Hora made were no less complex than those of Tempus. But he had designed them so that he could put together stable sub-assemblies of about ten elements each Hence when Hora had to put down a partly assembled watch to answer the phone, he lost only a small part of his work, and he assembled his watches in only a fraction of the man-hours it took Tempus.''\cite{Salvador2007}}. 
+
+Component Separability is connected to the production. However, it should be noted that it is more restrictive than per-part manufacturing\footnote{''There were once two watchmakers, named Tempus and Hora, who manufactured very fine watches the watches	the men made consisted of about 1000 parts each. Tempus had so constructed his that if he put it down—to answer the phone, say—it immediately fell to pieces and had to be reassembled from the elements. The watches that Hora made were no less complex than those of Tempus. But he had designed them so that he could put together stable sub-assemblies of about ten elements each Hence when Hora had to put down a partly assembled watch to answer the phone, he lost only a small part of his work, and he assembled his watches in only a fraction of the man-hours it took Tempus.''\cite{Salvador2007}}. 
 
 Separability is also defined in terms of disassembly. The fast disassembly enables fast maintenance and upgrade. The disassembly can be achieved via \emph{reversible} interface which drasticly reduces the requirements on time and tools. Furthermore, separability does not require the module to be constructed of multiple elements. The important thing is that the one element if changed changes the product variant and if it is separable, then it can be a module.
 
@@ -955,10 +773,28 @@ There are two subsequent definitions that can be made
 	where \emph{n'} is smallest possible number of components that, in conditions of full combinability, are needed to build \emph{m} product variants
 \end{enumerate}
 
-\subsubsection{Modularity conclusion}
-There are many other definition of modularity. However, I will not mention them here. The most interesting observation is that the definitions are usually made with regards to the expected result. 
 
-\subsection{Why modularity ?}
+\subsection{Conclusion}
+
+Since I have mentioned two distinct approaches to production and design it could be worth to compare them. The following table is taken from \cite{JulianaHsuanMikkola2003}:
+\begin{figure}[h!]
+	\centering
+	\includegraphics[height=.9\textheight]{Pictures/comparison}
+	\caption{Advantages of integral and modular approach.}
+	\label{fig:comparison}
+\end{figure}
+
+
+%%
+
+%% Modular Converter
+
+\newpage
+\section{Modular Converter}
+\begin{quote}
+	"\emph{It is not the strongest of the species that survives, nor the most intelligent, but the one most responsive to change.}" \\
+	Ch. Darwin \\
+\end{quote}
 
 In \cite{Bradshaw2015} there are two important questions with regards to modularity. 
 \begin{enumerate}
@@ -968,7 +804,7 @@ In \cite{Bradshaw2015} there are two important questions with regards to modular
 
 To me it appears that these two question boil down to the main question, and that is why do I even want to employ modularity. This is rather important question, and seems that it was not satisfactorily answered when employed for power converters. Hence, one of the possible explanation why it was never really picked up by the industry. 
 
-Conventional approach to modularity in power electronics, could be described as function-binding. For example in \cite{Khan2007} or \cite{Kenzelmann2012} define a canonical switching cell on which they then build a modular converter. Such an approach usually results in a design procedure similar to that in \cite{Ortjohann2009}. The typical trait of this approach is the fact that it binds usually one function to one module\footnote{Actually, as is claimed in \cite{Li2006} this is a source of benefit. Since it reflects the deduction process.}. This simplification may lead to a simpler design process, however, almost definitely it will not show in the simplified manufacturing process. 
+Conventional approach to modularity in power electronics, could be described as function-binding. For example in \cite{Khan2007} or \cite{Kenzelmann2012a} define a canonical switching cell on which they then build a modular converter. Such an approach usually results in a design procedure similar to that in \cite{Ortjohann2009}. The typical trait of this approach is the fact that it binds usually one function to one module\footnote{Actually, as is claimed in \cite{Li2006} this is a source of benefit. Since it reflects the deduction process.}. This simplification may lead to a simpler design process, however, almost definitely it will not show in the simplified manufacturing process. 
 
 Further problem with modularity in Power electronics is that the manufacturing or the supply chain is not considered. Not to speak about a market. The problem with the supply chain is very very nicely described in \cite{Fine2005}. The author describes an acquisition of Chrysler by Daimler. The problem is when we compare the two companies. While Mercedes is build as one very luxurious complex product, the Chrysler are usually relatively cheap, and build of modules. Each approach has its benefits, and each is suitable for different types of market. However trying to combine them might not end well. 
 
@@ -977,78 +813,8 @@ And this is a point that is almost never treated in the paper in IEEE concerning
 However, modularity of the converter is not usually required. If we take into account the definition from \cite{Salvador2007}, then the converters do not have many modules which are separable nor with high combinability. However, here is the problem that for power converters there are multiple dimensions in which the products can be separable. Lets say power rating or functionality. Therefore a more rigorous investigation is needed here. 
 
 
-\textbf{Why Modularity in LVDC distribution could make sense ?} 
-Generally there are two reasons to go for modular design from the point of view of industrial design or management\cite{Huang1998}:
-\begin{itemize}
-	\item produce large variety of products at low-cost
-	\item production module can be designed independetly of their function
-\end{itemize}
-
-The second point actually can be quite problematic for the production and modularity. The production is based on standarized modules with standarized interfaces. With introduction of new-to-production \cite{JulianaHsuanMikkola2003} can hinder the modularity of the production and move towards more integral production. This can be because of introduction of new functionalities of the module, or even new interfaces ... 
-
-Since I have mentioned two distinct approaches to production and design it could be worth to compare them. The following table is taken from \cite{JulianaHsuanMikkola2003}:
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=1\linewidth]{Pictures/comparison}
-	\caption{Advantages of integral and modular approach.}
-	\label{fig:comparison}
-\end{figure}
-
-It is rather clear that each time we want highly performing product for one particular application then we go for integral approach. This is to be highlighted because that is the case for most uses of the PE. The PE when used in industry is very expensive, and needs to be optimized for highest performance possible. In case PE is used in consumer electronics, the profit margins are very very low, and each cent is important. Either a company can decide to develop its own power supply like Philips in the past, which can lead to high performance, but economically it is not necessarilly cost effective. Or the company can outsource the technology and buy ready modules(whole converters) in such a case it has to change its internal structure and managerial style as well as claimed in\cite{Fine2005}. But as stressed for a converter as such, there are rarely reasons for companies to go for a modular design and manufacturing of the converter. 
-
-One of the reasons to choose modular design could be an increase in the development. As is quanititatevly studied in \cite{Wang2010} for a automobile industry. The modularistaion had measurable effect on the number of patents being produced. However, for example Tesla company seem to defy this theory. Since it achieved such a high performance via highly integral design process. 
-
-As is claimed in \cite{Sch??fer2007}, the modularity and reconfigurability with it will be the key defining process in future of manufacturing. The point is made and demonstrated on the Bosch factories.  Where it is shown that manufactuiring in future will become more decentralized thanks to modular design.
-
-There are quite a few efforts to quntify the modularity of the converter such as \cite{Huang1998} or \cite{Ji2012}. However these are left without futher comments for now. 
-
-\subsubsection{Why Modularity makes sense in LVDC ?}
-
-When examining the functionalities that a distribution converter should have in the future LVDC grid there is little reason to pick the modular design. The reasons comes from examining the market. The LVDC market can be much more different, where a variaty of products can be advantageous for the PE producer or the future TSO, so it can facillitate various grids. If LVDC is used in special cases it is very important to have a simple and cheap solution at hand very fast. This is where the modular approach can help. 
-
-Furthermore, when we examine the requirements we can realize that modular design is the only option. Since modularity can have positive effect on the long life, we can even design for it as in \cite{Newcomb1996}. The losses at partial load can be reduced by only turning on fraction of the modules such as \cite{Liserre2016a}. The redundancy N+1 is easily achieved with modular design \cite{Doncker2014}. 
-
-As is described in \cite{Cottet2015} a very easy maintanacce can be achieved via utilizing hot-swap capability. Although, it comes with a prize of an extra switch for a leg. 
-
-The prices can be reduced, since the modular design provides and easy way for standarization... The solution can be even enviromentaly friendly in case we employ enviromentally friendly replacable approach as Xerox did in the pas \cite{Ulrich2004}.
 
 
-
-%%
-The product architecture is a crucial term in the industrial design field. The product architecture can be defined as in Ulrich \cite{Ulrich2004}:
-	\begin{definition}
-	Product architecture is the scheme by which the functional elements of the product are arranged into physical chunks. The architecture of the product is established during the concept development and system-level design phases of development. 
-	\end{definition}
-	
-	The physical chunks are major physical building blocks from original physical elements. The modularity of the product architecture follows from two things:
-	\begin{itemize}
-	\item how many functions the chunks implement
-	\item how well are the interactions between the physical chunks defined
-	\end{itemize}
-		
-		
-From here it follows that modular architectures are those in which the physical chunks implement a specific set of functional elements and has well-defined interactions with the other chunks. Ulrich defines three types of modularity:
-\begin{itemize}
-\item slot modularity
-\item bus modularity
-\item sectional modularity
-\end{itemize}
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1\linewidth]{Pictures/modularityUlrich}
-\caption{Ulrich types of modularity}
-\label{fig:modularityulrich}
-\end{figure}
-
-				
-Integral architecture is on the opposite side of the spectrum of architectures. For integral architecture it is typical that implementation of the functional elements is spread across tanks, and the interactions between the chunks are ill-defined. As is noted in \cite{Ulrich2004}, there is no strict line between the two architectures, rather it is possible to determine a level of modularity of  the product. 
-				
-The product architecture has implications on product change, product variety, component standardization, product performance\footnote{Ulrich also notes that with integral architecture much higher performance of the product can be achieved.}, manufacturability(supply chain),and product development.  
-
-
-
-
-\section{Modular Converter}
 
 \subsection{Methodology}
 Inspired by the thoroughly described decision process during literature review in \cite{Salvador2007}, I have selected criteria for finding a definition of modular topology/design in power electronic literature. 
@@ -1095,13 +861,13 @@ Based on the literature review a following list of motivations and advantages wa
 \end{itemize}                   
 \newpage
 \subsection{Modules definitions}
-For the stream of research specializing in MMC and related topologies, the most often used submodules can be taken from literature review \cite{Perez2014b}:
+For the stream of research specializing in MMC and related topologies, the most often used submodules can be taken from literature review \cite{Perez2014}:
 
 \begin{figure}[h!]
-\centering
-\includegraphics[width=0.7\linewidth]{Pictures/cells}
-\caption{}
-\label{fig:cells}
+	\centering
+	\includegraphics[width=0.7\linewidth]{Pictures/cells}
+	\caption{}
+	\label{fig:cells}
 \end{figure}
 
 
@@ -1109,16 +875,206 @@ For the stream of research specializing in MMC and related topologies, the most 
 
 In \cite{Xu2016b} some hybrid modules are reviewed, mainly due to their capability of fault-ride-through. This ability, as shown is enhancing reliability(availability) of the MMC. 
 
-Here a picture of cells is missing since it seems redundant.
-
-
-\newpage
 
 In the first stream of research, on interleaved converters, the modules are the converters itself. As such they can be either standard full-bridge(or DAB) \cite{Bottion2015}, half-bridge \cite{Yao2012}, or Cuk \cite{Kamnarn2009}. 
 
 Basically in both streams, the modularity is used as a term describing cascaded topology of the converter. The modularity is rarely understood as something more. A notable exception is \cite{Yousefpoor2014}, where the author mentions that a modular converter should be also modular from the point of view of grid management. And to become a very versatile  substation asset, for transmission quality control and contingency management. In order to become such a thing the converter must not be modular only in the power dimension but also in the functionality dimension. Perhaps, somewhat in the application dimension as well. 
 
 
+%%
+\subsection{Modularity various aspects}
+% FOR LVDC
+%In order to construct a converter which is suitable to interconnect ac grid with the dc microgrid. Two options are basically available:
+%\begin{itemize}
+%	\item 2 or 3-level converter
+%	\item modular structure 
+%\end{itemize} 
+%
+%The problem with the first option is t that high power devices which can switch reasonably fast are not really available. Although SiC IGBTs could fill in the gap. 
+
+The second option is of interest for this project. The challenges then include besides else a higher cost, but also inevitably lower power density. The most common topology is input-series-connected and output-parallel-connected \cite{Fan2011}, \cite{wang2014}. The selection of this connection intuitevely makes sense, since on the output is much higher voltage than on the output. 
+
+The challenge is first of all to achieve a comparable efficiency to the traditional transformers, because of the cascaded structure. It seems to be common practice to either concentrate on the control of the whole M2C without actually building it, or to build only one module and than test it alone \cite{Fan2011}. 
+
+One of the main challenges in connecting the modules is to cope with relatively large inductance of the interconnections which are causing large circulating currents, causing high losses. The interconnection inductance is also limiting the switching frequency of the modules. 
+
+\subsubsection{Efficiency \& Reliability \& Modularity}
+
+For the SST the efficiencies vary widely based on the definition which author uses. However, for Eranet project only a DC-DC conversion part matters, thus a benchmark can be selected later. The low frequency transformers have \href{<http://www.ecfr.gov/cgi-bin/ECFR?page=browse>}{regulations}\footnote{http://www.ecfr.gov/cgi-bin/ECFR?page=browse} which specify the efficiencies for each voltage level and power rating. Currently the efficiency regulations form MV oil immersed transformers start at 98\% at 35\% of the nominal load. 
+
+%% MODULARITY AND EFFICIENCY
+What I find of particular interest it is the influence of modularity on the efficiency. Without considering any particular topology, while this limits the accuracy of the analysis based on the available literature there could be some general conclusions drawn. 
+%
+The following picture is inspired by a real graph in \cite{Yang2014}, where a modular structure based on dual-active bridges(DAB) was studied and similar dependence was measured for Silicon devices. As was shown in \cite{Yang2014}, there is a breaking point after which the efficiency of the modular structure starts to increase. If we  increase the no. of modules to relatively high number we can obtain efficiency comparable to that of non-cascaded structure. In the very same paper, it was shown that it does not make sense to increase the no. of modules after some point. The reason for the saturation in efficiency and weight gains was that increasing frequency is not an option after a point where the temperature of the ferrite would rise too much. 
+
+
+
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=\linewidth]{Pictures/MadeUp}
+%	\caption{Variation of efficiency based on the number of modules.}
+%	\label{fig:MadeUp}
+%\end{figure}
+%
+Based on the results from \cite{Yang2014}, I have added a line for SiC.  The SiC are well described in for example \cite{Rohm2014}, an application note from Rohm. It seems that SiC can push the efficiency and weight gains a bit higher in the area where the IGBT's would be normally used. I have also added GaN devices. Which could increase the efficiency for the cascaded system with many modules. However, this is only guess based on the fact that GaN converters with power rating of 1 $kW$ and switching frequency of almost 1 $MHz$ were already designed \cite{Mu2014}. 
+%
+In the summer school prof. Liserre had a lecture on the power electronics fro future grids. As I have noticed he was a strong advocate of modular structures for the future converter, therefore I have went through their articles. 
+
+
+
+%
+In \cite{Quartarone} it is claimed that the modularity can boost the efficiency of the SST. However, only the DC-DC part was considered, and only DAB was considered as a building block.  Furthermore, at some point it is claimed that a reliability can be improved because of redundancy. On the contrary during the lecture it was shown that the reliability might even suffer due to uneven thermal stress on the modules. While at this paper the switching losses are considered, other limitations like magnetic material are not thoroughly considered. Making the applicability of the work limited. 
+%
+In \cite{Costa2015} an interesting approach was proposed to increase redundancy of the DC-DC converter. 
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=.7\linewidth]{Pictures/Quad}
+%	\caption{Topology of quad-active bridge converter. Source: \cite{Costa2015}}
+%	\label{fig:Quad}
+%\end{figure}
+%
+The idea is, that the power can be routed through either all three modules on the right hand side, or only through two (or one) in case of a failure of  the other module. This is an interesting idea, because it clearly increases the redundancy of such a converter. However, as was pointed out that the uneven stress of the modules creates problem with how to integrate these modules inside a package. The thermal expansion coefficients are different for different materials. If we  turn on and off the modules too often then the temperatures of different parts of the converter will be different which leads to mechanical stressing ... An interesting project is though starting at this university called \href{<http://www.pe.tf.uni-kiel.de/en/research/fields-of-research/the-highly-efficient-and-reliable-smart-transformer-heart-a-new-heart-for-the-electric-distribution-system>}{The Highly Efficient And Reliable smart Transformer (HEART)}\footnote{http://www.pe.tf.uni-kiel.de/en/research/fields-of-research/the-highly-efficient-and-reliable-smart-transformer-heart-a-new-heart-for-the-electric-distribution-system}.
+
+\subsubsection{Limited space Reduction \& Magnetics design \& New semiconductors}
+
+The influence on power density also has whether we choose soft-switching or hard switching. We can improve the efficiency of hard switched converters with SiC devices, however it can be shown that these solution tend to be more bulky and less flexible. 
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=\linewidth]{Pictures/TransformerStatus}
+%	\caption{Transformer design status}
+%	\label{fig:TransformerStatus}
+%\end{figure}
+
+In general for LVDC the PFC topic is basically unexplored. Suprisingly even for HVDC the quality of the published work is relatively low, and the topic is not well documented. But my search was a bit brief.  
+
+An interesting source of inspiration is also the market for telecom distribution which has been dc-based for past 180 years. Currently the DC solutions for the market are of very high quality with rectifier efficiencies around 95 \% over large range of load fig. \ref{fig:eSure}.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{Pictures/eSure}
+	\caption{The 15kW high- efficiency eSure™ rectifier (model R400- 15000e) converts standard AC supply voltages into stable DC voltage, adjustable up to 400V DC. Each unit in the system operates inde- pendently and delivers conditioned, isolated power onto a common distribution bus. The rectifiers function in parallel for seamless redundancy and load sharing within the system. These pure three phase rectifiers provide ideally balanced currents back to the grid with low harmonic content.}
+	\label{fig:eSure}
+\end{figure}
+%%\newpage
+The companies operating on this market use modularity to achieve better spatial design of their converters. The idea is that they can better distribute the converters in space and thus save some space even though the power density is a bit smaller. As is noted the efficiency is of utmost importance due to the fact that the data centers consume up to 100 times more energy\footnote{Source: ABB blog ?} than the office building of the comparable size. 
+
+\newpage
+\section{Modular topology for LVDC}
+
+\textbf{Why Modularity in LVDC distribution could make sense ?} 
+Generally there are two reasons to go for modular design from the point of view of industrial design or management\cite{Huang1998}:
+\begin{itemize}
+	\item produce large variety of products at low-cost
+	\item production module can be designed independetly of their function
+\end{itemize}
+
+The second point actually can be quite problematic for the production and modularity. The production is based on standarized modules with standarized interfaces. With introduction of new-to-production \cite{JulianaHsuanMikkola2003} can hinder the modularity of the production and move towards more integral production. This can be because of introduction of new functionalities of the module, or even new interfaces ... 
+
+
+
+It is rather clear that each time we want highly performing product for one particular application then we go for integral approach. This is to be highlighted because that is the case for most uses of the PE. The PE when used in industry is very expensive, and needs to be optimized for highest performance possible. In case PE is used in consumer electronics, the profit margins are very very low, and each cent is important. Either a company can decide to develop its own power supply like Philips in the past, which can lead to high performance, but economically it is not necessarilly cost effective. Or the company can outsource the technology and buy ready modules(whole converters) in such a case it has to change its internal structure and managerial style as well as claimed in\cite{Fine2005}. But as stressed for a converter as such, there are rarely reasons for companies to go for a modular design and manufacturing of the converter. 
+
+One of the reasons to choose modular design could be an increase in the development. As is quanititatevly studied in \cite{Wang2010} for a automobile industry. The modularistaion had measurable effect on the number of patents being produced. However, for example Tesla company seem to defy this theory. Since it achieved such a high performance via highly integral design process. 
+
+As is claimed in \cite{Sch??fer2007}, the modularity and reconfigurability with it will be the key defining process in future of manufacturing. The point is made and demonstrated on the Bosch factories.  Where it is shown that manufactuiring in future will become more decentralized thanks to modular design.
+
+There are quite a few efforts to quntify the modularity of the converter such as \cite{Huang1998} or \cite{Ji2012}. However these are left without futher comments for now. 
+
+\subsubsection{Why Modularity makes sense in LVDC ?}
+
+When examining the functionalities that a distribution converter should have in the future LVDC grid there is little reason to pick the modular design. The reasons comes from examining the market. The LVDC market can be much more different, where a variaty of products can be advantageous for the PE producer or the future TSO, so it can facillitate various grids. If LVDC is used in special cases it is very important to have a simple and cheap solution at hand very fast. This is where the modular approach can help. 
+
+Furthermore, when we examine the requirements we can realize that modular design is the only option. Since modularity can have positive effect on the long life, we can even design for it as in \cite{Newcomb1996}. The losses at partial load can be reduced by only turning on fraction of the modules such as \cite{Liserre2016a}. The redundancy N+1 is easily achieved with modular design \cite{Doncker2014}. 
+
+As is described in \cite{Cottet2015} a very easy maintanacce can be achieved via utilizing hot-swap capability. Although, it comes with a prize of an extra switch for a leg. 
+
+The prices can be reduced, since the modular design provides and easy way for standarization... The solution can be even enviromentaly friendly in case we employ enviromentally friendly replacable approach as Xerox did in the pas \cite{Ulrich2004}.
+
+
+
+From the first part of the document it can be concluded that different parts of the LVDC network need to be connected in a way to generate higher DC bus voltages. As was shown in \cite{Yang2014} or \cite{Quartarone}, it is possible to expect positive effect of modular solution on efficiency and redundancy of the converter. As such there are several modular solution, which seem to be based on either series or parallel connection of converter. The converters can be connected:
+\begin{itemize}
+	\item IPOP - input parallel - output parallel
+	\item ISOP - input series - output parallel
+	\item IPOS - input parallel - output series
+	\item ISOS - input series - output series
+\end{itemize}
+
+For the LV application it can be hard to validate the series connection, since the voltage levels do not require sharing among the components. On the other hand, the parallel connection can reduce switching and conduction losses, furthermore a power sharing can be created when the power transfered is low, the redundant modules will be turned off. 
+
+For the LVDC application IPOP can prove to be worth investigation because of afromentioned positives. Furthermore the IPOP is also a solution on which some stuff can be applied and have a look on EMI. and other things like theory of chaos can be applied to study the emi, reliability, long life and more. To obtain more fundamental knowledge of what is happening. 
+
+Multi-cell converter systems, are being studied also in ETH PES, with regards to implementation of renewable sources. In \cite{Kolar2014a}, the advantages of parallel interleaving of converters were described as:
+\begin{itemize}
+	\item Breaks the Frequency Barrier
+	\item Breaks the Impedance Barrier
+	\item Breaks Cost Barrier - Standardization
+	\item High Part Load Efficiency
+\end{itemize}
+
+The interleaved converters were studied for very long time. However, there are still topics which were not yet described in detail
+\begin{itemize}
+	\item thermal cycling and uneven loading of the converters
+	\item EMI, while the parallel interleaving has potential to decrease the EMI there still might be need to quantify it. Furthermore, I came across quite interesting application of chaos theory for mitigation of EMI, however not done for more complex structures. 
+	\item furthermore, the redundancy is increased, however the various failures were not studied. In order to achieve longer useful life
+	\item based on the previous knowledge an approach to generation of system safe operation are can be described. This could be an interesting thing for practicing ingeniuers
+\end{itemize}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[height=0.5\textheight]{Pictures/Paralllel}
+	\caption{Paralllellll}
+	\label{fig:paralllel}
+\end{figure}
+
+Apparently the modular design can help and is used to tackle the newest european things for railways.
+
+\subsection{Module  review}
+\begin{remark}
+	This section was intended to cover much bigger scope of the converter topologies. However, they were only derivatives of the half-bridge and full-bridge converter. The reason to include only the two was to get more fundamental comparison. 
+\end{remark}
+
+The modular topologies are usually based on basic switching cell. The switching cell is most of the times either half-bridge cell or full bridge cell. As I have noted before, it is often required from the converters in distribution to have ability to isolate fault. 
+
+In multi-source systems it is often required to have galvanic isolation. The galvanic isolation is inside the converter. The requirement can be based on\cite{Karshenas2011}: 
+\begin{itemize}
+	\item personnel safety 
+	\item noise reduction
+	\item proper operation of protection systems
+\end{itemize}
+
+The basic cell is either full-bridge converter or half-bridge. 
+\begin{table}[h!]
+	\centering 
+	\begin{adjustbox}{width=1\textwidth}
+		\small
+		\begin{tabular}{c c c c} 
+			\multicolumn{4}{c}{Half-bridge and Full-bridge comparison} \\ 
+			\cmidrule(l){1-4}
+			\multicolumn{2}{c}{Half-bridge } & \multicolumn{2}{c}{Full-bridge } \\
+			Pros  & Cons & Pros & Cons   \\ % Column
+			
+			\midrule % In-table horizontal line
+			\midrule
+			Low switch count & Large current ripple at  & Voltage stress over the switch & High ripple content in currents, \\ %1
+			.  & splitting cap. LV side & is the same as bus voltage & thus large filters \\ %1
+			Relatively wide ZVS range & Unbalanced current stress & Almost equal current stress  & No inherent DC current  blocking\\ %2
+			against voltage and load variations & between switches on LV side & on each side &  capability for tf winding \\ %2
+			Same rating of components as & Low series inductance of TF & Simple structure of transformer & No soft-switching in  \\
+			for DAB & to limit reactive power & . & light load \\ 
+			Relatively easy control & . & Soft switching can be achieved & Control is sensitive to changes in \\
+			. & . & without additional circuits & phase angle, especially for high voltages. \\ 
+			Low ripple current at the  & . & Fast dynamic behaviour  due to & Large component count, \\
+			current fed side(desirable for batteries) & . & lack of additional passives & considerable gate losses \\ 
+			. & . & well known control methods  & . \\ %2
+			. & . & . & . \\ %2
+			\bottomrule % Bottom horizontal line
+		\end{tabular}
+	\end{adjustbox}
+	%	\caption{Table caption text} % Table caption, can be commented out if no caption is required
+	\label{tab:template} % A label for referencing this table elsewhere, references are used in text as \ref{label}
+\end{table}
+
+\section{Conclusion}
+\newpage
 \newpage
 \appendix
 \section{Perhaps a practical issue}

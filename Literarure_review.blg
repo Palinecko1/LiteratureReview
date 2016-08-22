@@ -1,25 +1,22 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Literarure_review.aux
 The style file: plain.bst
 Database file #1: MyCollection.bib
-Repeated entry---line 3124 of file MyCollection.bib
+Repeated entry---line 3139 of file MyCollection.bib
  : @article{Garrity2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5152 of file MyCollection.bib
+Repeated entry---line 5167 of file MyCollection.bib
  : @article{Kolar2010
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6619 of file MyCollection.bib
+Repeated entry---line 6634 of file MyCollection.bib
  : @article{Marquardt2002
  :                       ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Dragicevic2015"
-Warning--I didn't find a database entry for "Bahmani2016"
-Warning--I didn't find a database entry for "Kenzelmann2012"
-Warning--I didn't find a database entry for "Perez2014b"
 Warning--there's a number but no volume in Allwood2012
 Warning--empty journal in Although
 Warning--empty year in Although
+Warning--empty publisher in Bahmani2016a
 Warning--empty journal in Bayerer
 Warning--empty year in Bayerer
 Warning--empty journal in Bishop
@@ -37,6 +34,7 @@ Warning--empty journal in Faculty2014a
 Warning--there's a number but no volume in Faculty2014a
 Warning--empty journal in FeasibilityofDCtransmissionnetworks
 Warning--empty year in FeasibilityofDCtransmissionnetworks
+Warning--empty journal in Gerber2005
 Warning--empty journal in Hakala2015a
 Warning--there's a number but no volume in Hakala2015a
 Warning--empty journal in Hakala2015
@@ -44,6 +42,7 @@ Warning--empty journal in Ho1998
 Warning--empty journal in Hui
 Warning--empty year in Hui
 Warning--empty journal in Ji2012
+Warning--empty journal in Kenzelmann2012a
 Warning--empty journal in Kolar2015a
 Warning--empty journal in Kolar2014d
 Warning--there's a number but no volume in Kolar2014d
@@ -51,6 +50,7 @@ Warning--empty journal in Kyaw2015
 Warning--empty journal in Lasseter2004
 Warning--empty journal in Liserre2010
 Warning--there's a number but no volume in Liserre2010
+Warning--empty journal in Liserre2016
 Warning--there's a number but no volume in Liserre2016a
 Warning--there's a number but no volume in Marnay2015
 Warning--empty journal in Mohamed

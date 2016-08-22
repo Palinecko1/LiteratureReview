@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Abraham2005}
 Ferreira~Jan Abraham.
@@ -22,6 +22,13 @@ Mahmoud~M. Amin and O.~A. Mohammed.
 \newblock {\em IEEE Power and Energy Society General Meeting}, pages 1--8,
   2011.
 
+\bibitem{Andresen2014a}
+Markus Andresen, Marco Liserre, and Giampaolo Buticchi.
+\newblock {Review of active thermal and lifetime control techniques for power
+  electronic modules}.
+\newblock {\em 2014 16th European Conference on Power Electronics and
+  Applications, EPE-ECCE Europe 2014}, 2014.
+
 \bibitem{Baars2015}
 Nico Baars, Jordi Everts, Cornelis Wijnands, and Elena Lomonova.
 \newblock {Performance Evaluation of a Three-Phase Dual Active Bridge DC-DC
@@ -34,6 +41,12 @@ Nico Baars, Jordi Everts, Korneel Wijnands, and Elena Lomonova.
   performance of a three-phase dual active bridge DC-DC converter}.
 \newblock {\em 2015 IEEE Energy Conversion Congress and Exposition, ECCE 2015},
   pages 637--644, 2015.
+
+\bibitem{Bahmani2016a}
+Mohammadamin Bahmani.
+\newblock {\em {Design and Optimization Considerations of Medium-Frequency
+  Power Transformers in High-Power DC-DC Applications}}.
+\newblock 2016.
 
 \bibitem{Bayerer}
 Reinhold Bayerer.
@@ -122,6 +135,12 @@ D~Dong, F~Luo, X~Zhang, D~Boroyevich, and P~Mattavelli.
   Components Minimization}.
 \newblock {\em IEEE Trans. on Power Electron.}, 28(4):1667--1679, 2013.
 
+\bibitem{Dragicevic2015}
+Tomislav Dragicevic, Xiaonan Lu, Juan Vasquez, and Josep Guerrero.
+\newblock {DC Microgrids{\&}{\#}x2013;Part I: A Review of Control Strategies
+  and Stabilization Techniques}.
+\newblock {\em IEEE Transactions on Power Electronics}, 8993(c):1--1, 2015.
+
 \bibitem{Dragicevic2014}
 Tomislav Dragicevic, Juan Vasquez, Josep Guerrero, and Davor {\v{S}}krlec.
 \newblock {Advanced LVDC Electrical Power Architectures and Microgrids}.
@@ -175,6 +194,12 @@ Charles~H. Fine.
 T~F Garrity.
 \newblock {Innovation and trends for future electric power systems}.
 \newblock {\em 2009 Power Systems Conference}, pages 1--8, 2009.
+
+\bibitem{Gerber2005}
+Mark~Benjamin Gerber.
+\newblock {The Electrical, Thermal and Spatial Integration of a Converter in a
+  Power Electronic Module}.
+\newblock 2005.
 
 \bibitem{Hajian2012}
 M.~Hajian, D.~Jovcic, G.~Asplund, and H.~Zhang.
@@ -263,6 +288,18 @@ Hr~Karshenas and Hamid Daneshpajooh.
 \newblock {\em Energy Storage in the Emerging ERA of Smart Grids}, pages
   162--178, 2011.
 
+\bibitem{Kassakian2013}
+John~G. Kassakian and Thomas~M. Jahns.
+\newblock {Evolving and emerging applications of power electronics in systems}.
+\newblock {\em IEEE Journal of Emerging and Selected Topics in Power
+  Electronics}, 1(2):47--58, 2013.
+
+\bibitem{Kenzelmann2012a}
+Stephan Kenzelmann.
+\newblock {Modular DC / DC Converter for DC Distribution and Collection
+  Networks PAR}.
+\newblock 5430, 2012.
+
 \bibitem{Khan2007}
 Faisal~Habib Khan.
 \newblock {Modular DC-DC converters}.
@@ -334,6 +371,11 @@ Marco Liserre.
 \newblock {MARCO LISERRE, THILO SAUTER, and JOHN Y. HUNG}.
 \newblock (March):18--37, 2010.
 
+\bibitem{Liserre2016}
+Marco Liserre.
+\newblock {Smart Transformers-based hybrid microgrids}.
+\newblock 2016.
+
 \bibitem{Liserre2016a}
 Marco Liserre, Giampaolo Buticchi, Markus Andresen, Giovanni~De Carne, and
   Levy~Ferreira Costa.
@@ -388,6 +430,13 @@ R.~Marquardt, A.~Lesnicar, and J.~Hildinger.
   hohen Spannungen}.
 \newblock {\em ETG Fachtagung}, 2002.
 
+\bibitem{McMurray1971}
+William McMurray.
+\newblock {The Thyristor Electronic Transformer: a Power Converter Using a
+  High-Frequency Link}.
+\newblock {\em IEEE Transactions on Industry and General Applications},
+  IGA-7(4):451--457, 1971.
+
 \bibitem{Mohamed}
 A~Mohamed, Student Member, and O~Mohammed.
 \newblock {Power Flow Control in DC Distribution Systems}.
@@ -440,6 +489,13 @@ White Paper, Neil Rasmussen, and James Spitaels.
 M.~Pavlovsky.
 \newblock {\em {Electronic DC Transformer with High Power Density}}.
 \newblock 2006.
+
+\bibitem{Perez2014}
+Marcelo~a. Perez, Steffen Bernet, Jose Rodriguez, Samir Kouro, and Ricardo
+  Lizana.
+\newblock {Circuit Topologies, Modelling, Control Schemes and Applications of
+  Modular Multilevel Converters}.
+\newblock {\em IEEE Transactions on Power Electronics}, PP(99):1, 2014.
 
 \bibitem{Popovic2005}
 Jelena Popovic.
@@ -511,6 +567,12 @@ J~D van Wyk and F~C Lee.
 \newblock {On a Future for Power Electronics}.
 \newblock {\em Emerging and Selected Topics in Power Electronics, IEEE Journal
   of}, 1(2):59--72, 2013.
+
+\bibitem{VanWyk2014}
+Rias~J. {Van Wyk} and Gerard Gaynor.
+\newblock {An academic template for graduate programs in Engineering and
+  Technology Management (ETM)}.
+\newblock {\em IEEE Engineering Management Review}, 42(4):119--124, 2014.
 
 \bibitem{Waffler2009}
 S.~Waffler, M.~Preindl, and J.~W. Kolar.
